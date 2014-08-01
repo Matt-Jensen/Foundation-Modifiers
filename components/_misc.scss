@@ -1,0 +1,30 @@
+.-unstyled-list {
+	list-style: none;
+	margin-left: auto;
+}
+.-pointer {
+	cursor: pointer !important;
+}
+.-pointer-default {
+	cursor: default !important;
+}
+.-unfocus:focus {
+	outline: none;
+}
+
+
+/* Border Radius */
+.-radius {
+	border-radius: $global-radius !important;
+}
+.-round {
+	border-radius: 100px !important;
+}
+
+/* Animations */
+.-backface-visible {
+	/*@include backface-visibility(visible);*/
+}
+.-trans.animated {
+	opacity: inherit;
+}
