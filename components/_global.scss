@@ -66,7 +66,8 @@ $xxlarge-baseline: convert-to-rem($xxlarge-baseline-val) !default;
 
 
 // White Color
-$white-color: $body-font-color !default;
+$white-color: #fff;
+$black-color: $body-font-color !default;
 
 
 // Gray Scale Colors
