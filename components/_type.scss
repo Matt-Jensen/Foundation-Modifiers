@@ -132,11 +132,21 @@
 }
 
 /* Font Families */
+.-sans-serif-ff {
+	font-family: $sans-serif-font-family !important;
+}
 .-sans-serif {
 	font-family: $sans-serif-font-family !important;
+	font-weight: $sans-serif-font-weight !important;
+	font-style: $sans-serif-font-style !important;	
+}
+.-serif-ff {
+	font-family: $serif-font-family !important;
 }
 .-serif {
 	font-family: $serif-font-family !important;
+	font-weight: $serif-font-weight !important;
+	font-style: $serif-font-style !important;
 }
 
 /* White Space */

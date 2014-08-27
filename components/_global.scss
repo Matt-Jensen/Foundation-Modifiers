@@ -33,7 +33,13 @@ $baselineRefs: "-small", "-medium", "-medium-up", "-large", "-large-up" !default
 
 // Font Families
 $sans-serif-font-family: $body-font-family;
+$sans-serif-font-style: $body-font-style:;
+$sans-serif-font-weight: $body-font-weight;
+
 $serif-font-family: Georgia, Times, "Times New Roman", serif;
+$serif-font-style: normal;
+$serif-font-weight: normal;
+
 
 
 // Font Sizes (Smaller Devices Only)
