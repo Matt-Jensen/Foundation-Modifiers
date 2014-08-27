@@ -9,9 +9,11 @@ A treasure chest of .-utility-classes that modify, extend and supercharge the cl
 __Requires: [Zurb Foundation!](http://foundation.zurb.com) (For Sites)__
 
 In order to include Foundation-Modifiers in your SCSS project first include Foundation in your main SCSS file.
+	
 	@import: "foundation";
 
 Now below this you can include foundation-modifiers:
+	
 	@import: "foundation-modifiers/modifiers";
 
 
@@ -25,10 +27,12 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 ## Foundation-Modifier's Variable Reference
 
 *General:*
+    
     $rem-base-val
     $scaled-rem-base-val
 
 *Vertical Heights Baselines:*
+    
     $xsmall-baseline-val
     $xsmall-baseline
     $small-baseline-val
@@ -43,10 +47,12 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
     $xxlarge-baseline
 
 *Associate Media Queries to Baselines:*
+	
 	$mediaQueries
 	$baselineRefs
 
 *Font Families:*
+	
 	$sans-serif-font-family
 	$sans-serif-font-style
 	$sans-serif-font-weight
@@ -56,6 +62,7 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 	$serif-font-weight
 
 *Type Sizes:*
+	
 	$font-size-xlarge-val
 	$font-size-xlarge
 	$font-size-large-val
@@ -78,6 +85,7 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 	$scaled-font-size-xsmall
 
 *Additional Colors:*
+	
 	$white-color
 	$black-color
 	$gray
