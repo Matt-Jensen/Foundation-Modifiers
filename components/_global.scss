@@ -6,6 +6,27 @@ $rem-base-val: strip-unit($rem-base) !default;
 $scaled-rem-base-val: $rem-base !default;
 
 
+// Vertical Heights
+$xsmall-baseline-val: 5 !default;
+$xsmall-baseline: convert-to-rem($xsmall-baseline-val) !default;
+
+$small-baseline-val: 8 !default;
+$small-baseline: convert-to-rem($small-baseline-val) !default;
+
+$default-baseline-val: 15 !default;
+$default-baseline: convert-to-rem($default-baseline-val) !default;
+
+$large-baseline-val: 30 !default;
+$large-baseline: convert-to-rem($large-baseline-val) !default;
+
+$xlarge-baseline-val: 40 !default;
+$xlarge-baseline: convert-to-rem($xlarge-baseline-val) !default;
+
+$xxlarge-baseline-val: 50 !default;
+$xxlarge-baseline: convert-to-rem($xxlarge-baseline-val) !default;
+
+
+
 // Responsive Margins + Padding
 $mediaQueries: ($small-only, $medium-only, $medium-up, $large-only, $large-up) !default;
 $baselineRefs: "-small", "-medium", "-medium-up", "-large", "-large-up" !default;
@@ -43,26 +64,6 @@ $scaled-font-size-small: convert-to-rem($scaled-font-size-small-val) !default;
 
 $scaled-font-size-xsmall-val: 13 !default;
 $scaled-font-size-xsmall: convert-to-rem($scaled-font-size-xsmall-val) !default;
-
-
-// Vertical Heights
-$xsmall-baseline-val: 5 !default;
-$xsmall-baseline: convert-to-rem($xsmall-baseline-val) !default;
-
-$small-baseline-val: 8 !default;
-$small-baseline: convert-to-rem($small-baseline-val) !default;
-
-$default-baseline-val: 15 !default;
-$default-baseline: convert-to-rem($default-baseline-val) !default;
-
-$large-baseline-val: 30 !default;
-$large-baseline: convert-to-rem($large-baseline-val) !default;
-
-$xlarge-baseline-val: 40 !default;
-$xlarge-baseline: convert-to-rem($xlarge-baseline-val) !default;
-
-$xxlarge-baseline-val: 50 !default;
-$xxlarge-baseline: convert-to-rem($xxlarge-baseline-val) !default;
 
 
 // White Color
