@@ -23,7 +23,8 @@
 
 /* Animations */
 .-backface-visible {
-	/*@include backface-visibility(visible);*/
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
 }
 .-trans.animated {
 	opacity: inherit;
