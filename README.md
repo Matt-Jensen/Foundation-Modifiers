@@ -24,11 +24,11 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 
 ## Foundation-Modifier's Variable Reference
 
-*General*
-`$rem-base-val`
-`$scaled-rem-base-val`
+	*General:*
+	$rem-base-val
+	$scaled-rem-base-val
 
-*Vertical Heights Baselines*
+*Vertical Heights Baselines:*
 `$xsmall-baseline-val`
 `$xsmall-baseline`
 `$small-baseline-val`
@@ -42,11 +42,11 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 `$xxlarge-baseline-val`
 `$xxlarge-baseline`
 
-*Associate Media Queries to Baselines*
+*Associate Media Queries to Baselines:*
 `$mediaQueries`
 `$baselineRefs`
 
-*Font Families*
+*Font Families:*
 `$sans-serif-font-family`
 `$sans-serif-font-style`
 `$sans-serif-font-weight`
@@ -55,7 +55,7 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 `$serif-font-style`
 `$serif-font-weight`
 
-*Type Sizes*
+*Type Sizes:*
 `$font-size-xlarge-val`
 `$font-size-xlarge`
 `$font-size-large-val`
@@ -77,7 +77,7 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 `$scaled-font-size-xsmall-val`
 `$scaled-font-size-xsmall`
 
-*Additional Colors*
+*Additional Colors:*
 `$white-color`
 `$black-color`
 `$gray`
