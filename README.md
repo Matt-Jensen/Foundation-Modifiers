@@ -25,22 +25,22 @@ This project isn't large so just poke around or tweet me [@madmattican](http://t
 ## Foundation-Modifier's Variable Reference
 
 *General:*
-	$rem-base-val
-	$scaled-rem-base-val
+    $rem-base-val
+    $scaled-rem-base-val
 
 *Vertical Heights Baselines:*
-	$xsmall-baseline-val
-	$xsmall-baseline
-	$small-baseline-val
-	$small-baseline
-	$default-baseline-val
-	$default-baseline
-	$large-baseline-val
-	$large-baseline
-	$xlarge-baseline-val
-	$xlarge-baseline
-	$xxlarge-baseline-val
-	$xxlarge-baseline
+    $xsmall-baseline-val
+    $xsmall-baseline
+    $small-baseline-val
+    $small-baseline
+    $default-baseline-val
+    $default-baseline
+    $large-baseline-val
+    $large-baseline
+    $xlarge-baseline-val
+    $xlarge-baseline
+    $xxlarge-baseline-val
+    $xxlarge-baseline
 
 *Associate Media Queries to Baselines:*
 	$mediaQueries
