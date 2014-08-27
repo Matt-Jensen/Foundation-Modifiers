@@ -131,6 +131,14 @@
 	}
 }
 
+/* Font Families */
+.-sans-serif {
+	font-family: $sans-serif-font-family !important;
+}
+.-serif {
+	font-family: $serif-font-family !important;
+}
+
 /* White Space */
 .-pre-line {
 	white-space: pre-line !important;

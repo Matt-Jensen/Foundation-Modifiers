@@ -31,6 +31,10 @@ $xxlarge-baseline: convert-to-rem($xxlarge-baseline-val) !default;
 $mediaQueries: ($small-only, $medium-only, $medium-up, $large-only, $large-up) !default;
 $baselineRefs: "-small", "-medium", "-medium-up", "-large", "-large-up" !default;
 
+// Font Families
+$sans-serif-font-family: $body-font-family;
+$serif-font-family: Georgia, Times, "Times New Roman", serif;
+
 
 // Font Sizes (Smaller Devices Only)
 $font-size-xlarge-val: 24 !default;
