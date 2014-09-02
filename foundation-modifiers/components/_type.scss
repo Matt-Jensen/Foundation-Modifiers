@@ -1,11 +1,9 @@
 @import "global";
 @import "../functions";
 
-/* Font Sizes */
-/********************
-* Font Sizes
-********************/
 
+
+/* Font Sizes */
 .-xsmall-font-size {
 	font-size: $font-size-xsmall !important;
 }
@@ -21,6 +19,8 @@
 .-xlarge-font-size {
 	font-size: $font-size-xlarge !important;
 }
+
+
 
 /* Font sizes for larger devices */
 @media #{$medium-up} {
@@ -42,6 +42,7 @@
 }
 
 
+
 /* Text Color */
 .-primary-color {
 	color: $primary-color !important;
@@ -59,11 +60,13 @@
 	color: $info-color !important;
 }
 .-white-color {
-	color: $white-color !important;
+	color: $white !important;
 }
 .-black-color {
-	color: $black-color !important;
+	color: $black !important;
 }
+
+
 
 /* Grayscale Colors */
 .-gray-color {
@@ -96,6 +99,8 @@
 .-gray-10-color {
 	color: $gray-10 !important;
 }
+
+
 
 /* Text Alignment */
 .-tar {
@@ -131,6 +136,8 @@
 	}
 }
 
+
+
 /* Font Families */
 .-sans-serif-ff {
 	font-family: $sans-serif-font-family !important;
@@ -149,6 +156,8 @@
 	font-style: $serif-font-style !important;
 }
 
+
+
 /* White Space */
 .-pre-line {
 	white-space: pre-line !important;
@@ -157,10 +166,14 @@
 	white-space: nowrap !important;
 }
 
+
+
 /* Indenting */
 .-indent {
 	text-indent: $large-baseline;
 }
+
+
 
 /* Text Styling */
 .-uppercase {
@@ -178,6 +191,7 @@
 .-font-smoothing {
 	@include font-smoothing();
 }
+
 
 
 /* Line Heights */

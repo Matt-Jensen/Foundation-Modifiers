@@ -1,7 +1,8 @@
 @import "global";
 
-/* margins */
 
+
+/* margins */
 .-mb {
 	margin-bottom: $default-baseline !important;
 }
@@ -88,6 +89,7 @@
 }
 
 
+
 /* Paddings */
 .-pb {
 	padding-bottom: $default-baseline !important;
@@ -161,6 +163,8 @@
 .-npt {
 	padding-top: 0px !important;
 }
+
+
 
 /* Responsive Margins + Padding */
 $mediaQueries: ($small-only, $medium-only, $medium-up, $large-only, $large-up);

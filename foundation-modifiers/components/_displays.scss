@@ -1,5 +1,7 @@
 @import "global";
 
+
+
 /* display */
 .-inline-block {
 	display: -moz-inline-stack;
@@ -40,6 +42,9 @@
 		.#{$reference}-db {
 			display: block !important;
 		}
+		.#{$reference}-dn {
+			display: none !important;
+		}
 		.#{$reference}-inline {
 			display: inline !important;
 		}
@@ -48,6 +53,8 @@
 		}
 	}
 }
+
+
 
 /* Floating */
 .-fl {
@@ -74,6 +81,8 @@
 		}
 	}
 }
+
+
 
 /* General Positions, Displays, and Overflows */
 .-rel {

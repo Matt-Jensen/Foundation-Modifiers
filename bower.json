@@ -1,0 +1,32 @@
+{
+  "name": "Foundation-Modifiers",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Matt-Jensen/Foundation-Modifiers",
+  "authors": [
+    "Matt Jensen <mjens02@gmail.com>"
+  ],
+  "description": "A treasure chest of .-utility-classes that modify, extend and supercharge the classes and global variables provided by Zurb's Foundation For Sites",
+  "main": "_foundation-modifiers.scss",
+  "keywords": [
+    "Foundation",
+    "Modifiers",
+    "Utility",
+    "Classes",
+    "CSS",
+    "SCSS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.4.3"
+  },
+  "dependencies": {
+    "foundation": "~5.4.3"
+  }
+}

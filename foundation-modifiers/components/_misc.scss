@@ -13,6 +13,7 @@
 }
 
 
+
 /* Border Radius */
 .-radius {
 	border-radius: $global-radius !important;
@@ -21,6 +22,8 @@
 	border-radius: 100px !important;
 }
 
+
+
 /* Animations */
 .-backface-visible {
 	-webkit-backface-visibility: visible !important;
@@ -28,4 +31,17 @@
 }
 .-trans.animated {
 	opacity: inherit;
+}
+
+
+
+/* Overflows */
+.-overflow-hidden {
+	overflow: hidden !important;
+}
+.-overflow-scroll {
+	overflow: scroll !important;
+}
+.-overflow-auto {
+	overflow: auto !important;
 }

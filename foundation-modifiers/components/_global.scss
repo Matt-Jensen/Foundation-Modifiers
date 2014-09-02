@@ -27,9 +27,11 @@ $xxlarge-baseline: convert-to-rem($xxlarge-baseline-val) !default;
 
 
 
-// Responsive Margins + Padding
+// Modifier Queries
 $mediaQueries: ($small-only, $medium-only, $medium-up, $large-only, $large-up) !default;
 $baselineRefs: "-small", "-medium", "-medium-up", "-large", "-large-up" !default;
+
+
 
 // Font Families
 $sans-serif-font-family: $body-font-family;
@@ -42,7 +44,7 @@ $serif-font-weight: normal;
 
 
 
-// Font Sizes (Smaller Devices Only)
+// (Smaller Devices Only)
 $font-size-xlarge-val: 24 !default;
 $font-size-xlarge: convert-to-rem($font-size-xlarge-val) !default;
 
@@ -59,7 +61,7 @@ $font-size-xsmall-val: 12 !default;
 $font-size-xsmall: convert-to-rem($font-size-xsmall-val) !default;
 
 
-// Small Font Sizes (Larger Devices Only)
+// (Larger Devices Only)
 $scaled-font-size-xlarge-val: 27 !default;
 $scaled-font-size-xlarge: convert-to-rem($scaled-font-size-xlarge-val) !default;
 
@@ -76,10 +78,10 @@ $scaled-font-size-xsmall-val: 13 !default;
 $scaled-font-size-xsmall: convert-to-rem($scaled-font-size-xsmall-val) !default;
 
 
-// White Color
-$white-color: #fff;
-$black-color: $body-font-color !default;
 
+// Main Colors
+$white: #fff !default;
+$black: $body-font-color !default;
 
 // Gray Scale Colors
 $gray: grayscale($primary-color) !default;
