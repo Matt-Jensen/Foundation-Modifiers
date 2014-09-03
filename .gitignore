@@ -39,4 +39,4 @@ Thumbs.db
 # Managed Package Directories #
 ###############################
 bower_components
-docs/npm_modules
+node_modules
