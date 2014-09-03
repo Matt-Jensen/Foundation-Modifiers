@@ -13,3 +13,14 @@
   *vertical-align: auto;
   float: none;
 }
+
+@mixin text-highlight($color:$white, $background:$primary-color) {
+  *::selection {
+    color: $color;
+    background: $background;
+  }
+  *::-moz-selection {
+    color: $color;
+    background: $background;
+  }
+}
