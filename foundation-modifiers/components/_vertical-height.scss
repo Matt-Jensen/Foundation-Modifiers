@@ -164,194 +164,50 @@
 	padding-top: 0px !important;
 }
 
+@mixin vertical-height-class($value, $reference:-small, $size:xs, $style:margin, $direction:top) {
+	
+	$selectorStyle: if($style == margin, m, p);
 
+	@if $direction == top {
+		$selectorDirection: t;
+	} @else if $direction == left {
+		$selectorDirection: l;
+	} @else if $direction == bottom {
+		$selectorDirection: b;
+	} @else {
+		$selectorDirection: r;
+	}
+
+	.#{'-' + $reference}-#{$size}#{$selectorStyle}#{$selectorDirection} {
+		#{$style}-#{$direction}: $value !important;
+	}
+}
 
 /* Responsive Margins + Padding */
 $mediaQueries: ($small-only, $medium-only, $medium-up, $large-only, $large-up);
-$baselineRefs: "-small", "-medium", "-medium-up", "-large", "-large-up";
+$baselineRefs: 'small', 'medium', 'medium-up', 'large', 'large-up';
+$sizeRefs: 'n', 'xs', 's', '', 'l', 'xl', 'xxl';
+$queryValues: (0, $xsmall-baseline, $small-baseline, $default-baseline, $large-baseline, $xlarge-baseline, $xxlarge-baseline);
+$directionRefs: 'top', 'left', 'bottom', 'right';
 
 @each $mediaQuery in $mediaQueries {
 	$index: index($mediaQueries, $mediaQuery);
 	$reference: nth($baselineRefs, $index);
-	
+
+	// Generate utilies by media query i.e. -medium-up
 	@media #{$mediaQuery} {
 
-		.#{$reference}-xsmt {
-			margin-top: $xsmall-baseline !important;
-		}
-		.#{$reference}-smt {
-			margin-top: $small-baseline !important;
-		}
-		.#{$reference}-mt {
-			margin-top: $default-baseline !important;
-		}
-		.#{$reference}-lmt {
-			margin-top: $large-baseline !important;
-		}
-		.#{$reference}-xlmt {
-			margin-top: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlmt {
-			margin-top: $xxlarge-baseline !important;
-		}
 
-		.#{$reference}-xsml {
-			margin-left: $xsmall-baseline !important;
-		}
-		.#{$reference}-sml {
-			margin-left: $small-baseline !important;
-		}
-		.#{$reference}-ml {
-			margin-left: $default-baseline !important;
-		}
-		.#{$reference}-lml {
-			margin-left: $large-baseline !important;
-		}
-		.#{$reference}-xlml {
-			margin-left: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlml {
-			margin-left: $xxlarge-baseline !important;
-		}
+		// Generate utilitizes by size i.e. xl
+		@each $sizeRef in $sizeRefs {
+			
+			$valueReference: nth($queryValues, index($sizeRefs, $sizeRef));
 
-		.#{$reference}-xsmb {
-			margin-bottom: $xsmall-baseline !important;
-		}
-		.#{$reference}-smb {
-			margin-bottom: $small-baseline !important;
-		}
-		.#{$reference}-mb {
-			margin-bottom: $default-baseline !important;
-		}
-		.#{$reference}-lmb {
-			margin-bottom: $large-baseline !important;
-		}
-		.#{$reference}-xlmb {
-			margin-bottom: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlmb {
-			margin-bottom: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-xsmr {
-			margin-right: $xsmall-baseline !important;
-		}
-		.#{$reference}-smr {
-			margin-right: $small-baseline !important;
-		}
-		.#{$reference}-mr {
-			margin-right: $default-baseline !important;
-		}
-		.#{$reference}-lmr {
-			margin-right: $large-baseline !important;
-		}
-		.#{$reference}-xlmr {
-			margin-right: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlmr {
-			margin-right: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-nmr {
-			margin-right: 0 !important;
-		}
-		.#{$reference}-nml {
-			margin-left: 0 !important;
-		}
-		.#{$reference}-nmt {
-			margin-top: 0 !important;
-		}
-		.#{$reference}-nmb {
-			margin-bottom: 0 !important;
-		}
-
-		.#{$reference}-xspt {
-			padding-top: $xsmall-baseline !important;
-		}
-		.#{$reference}-spt {
-			padding-top: $small-baseline !important;
-		}
-		.#{$reference}-pt {
-			padding-top: $default-baseline !important;
-		}
-		.#{$reference}-lpt {
-			padding-top: $large-baseline !important;
-		}
-		.#{$reference}-xlpt {
-			padding-top: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlpt {
-			padding-top: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-xspl {
-			padding-left: $xsmall-baseline !important;
-		}
-		.#{$reference}-spl {
-			padding-left: $small-baseline !important;
-		}
-		.#{$reference}-pl {
-			padding-left: $default-baseline !important;
-		}
-		.#{$reference}-lpl {
-			padding-left: $large-baseline !important;
-		}
-		.#{$reference}-xlpl {
-			padding-left: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlpl {
-			padding-left: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-xspb {
-			padding-bottom: $xsmall-baseline !important;
-		}
-		.#{$reference}-spb {
-			padding-bottom: $small-baseline !important;
-		}
-		.#{$reference}-pb {
-			padding-bottom: $default-baseline !important;
-		}
-		.#{$reference}-lpb {
-			padding-bottom: $large-baseline !important;
-		}
-		.#{$reference}-xlpb {
-			padding-bottom: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlpb {
-			padding-bottom: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-xspr {
-			padding-right: $xsmall-baseline !important;
-		}
-		.#{$reference}-spr {
-			padding-right: $small-baseline !important;
-		}
-		.#{$reference}-pr {
-			padding-right: $default-baseline !important;
-		}
-		.#{$reference}-lpr {
-			padding-right: $large-baseline !important;
-		}
-		.#{$reference}-xlpr {
-			padding-right: $xlarge-baseline !important;
-		}
-		.#{$reference}-xxlpr {
-			padding-right: $xxlarge-baseline !important;
-		}
-
-		.#{$reference}-npr {
-			padding-right: 0 !important;
-		}
-		.#{$reference}-npl {
-			padding-left: 0 !important;
-		}
-		.#{$reference}-npt {
-			padding-top: 0 !important;
-		}
-		.#{$reference}-npb {
-			padding-bottom: 0 !important;
+			// Add utility .-reference-+size+style+direction {}
+			@each $directionRef in $directionRefs {
+				@include vertical-height-class($valueReference, $reference, $sizeRef, margin, $directionRef);
+				@include vertical-height-class($valueReference, $reference, $sizeRef, padding, $directionRef);
+			}
 		}
 	}
 }

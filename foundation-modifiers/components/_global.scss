@@ -1,3 +1,13 @@
+// Global Functions
+@function if($condition, $if-value, $else-value) {
+    @if ($condition == true) {
+        @return $if-value;
+    } @else {
+        @return $else-value;
+    }
+}
+
+
 // Get numeric value of $rem-base
 $rem-base-val: strip-unit($rem-base) !default;
 
