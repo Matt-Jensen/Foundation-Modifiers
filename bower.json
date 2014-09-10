@@ -1,12 +1,12 @@
 {
-  "name": "Foundation-Modifiers",
+  "name": "Foundation-Utility-Belt",
   "version": "0.0.0",
-  "homepage": "https://github.com/Matt-Jensen/Foundation-Modifiers",
+  "homepage": "https://github.com/Matt-Jensen/Foundation-Utility-Belt",
   "authors": [
     "Matt Jensen <mjens02@gmail.com>"
   ],
   "description": "A treasure chest of .-utility-classes that modify, extend and supercharge the classes and global variables provided by Zurb's Foundation For Sites",
-  "main": "_foundation-modifiers.scss",
+  "main": "_foundation-utility-belt.scss",
   "keywords": [
     "Foundation",
     "Modifiers",

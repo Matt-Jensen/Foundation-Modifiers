@@ -28,7 +28,7 @@ gulp.task("default", function() {
 			return file.pipe(reload({"stream": true }));
 		}));
 
-	watch({ glob: ['../*.scss', '../foundation-modifiers/**/*.scss'] }, function() {
+	watch({ glob: ['../*.scss', '../foundation-utility-belt/**/*.scss'] }, function() {
 		return compileSass();
 	});
 });
