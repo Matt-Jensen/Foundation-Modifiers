@@ -166,7 +166,11 @@
 
 @mixin vertical-height-class($value, $reference:-small, $size:xs, $style:margin, $direction:top) {
 	
-	$selectorStyle: if($style == margin, m, p);
+	@if $style == margin {
+		$selectorStyle: m;
+	} @else {
+		$selectorStyle: p;
+	} 
 
 	@if $direction == top {
 		$selectorDirection: t;
